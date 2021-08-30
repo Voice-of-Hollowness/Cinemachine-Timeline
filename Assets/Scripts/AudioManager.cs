@@ -58,7 +58,6 @@ public class AudioManager : MonoBehaviour
 
         Library = GetComponent<SoundLib>();
         audioListener = FindObjectOfType<AudioListener>().transform;
-        playerT = FindObjectOfType<Player>().transform;
         masterVolumePercent = PlayerPrefs.GetFloat("master vol", 1);
         sfxVolumePercent = PlayerPrefs.GetFloat("sfx vol", 1);
         musicVolumePercent = PlayerPrefs.GetFloat("music vol", 1);
