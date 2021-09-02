@@ -14,7 +14,7 @@ public class MusicManager : MonoBehaviour
     void OnLvlLoad(int sceneIndex)
     {
         string newSceneName = SceneManager.GetActiveScene().name;
-    if (newSceneName==sceneName)
+    if (newSceneName!=sceneName)
     {
         sceneName = newSceneName;
         Invoke("PlayMusic",.2f);
